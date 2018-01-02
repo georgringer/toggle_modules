@@ -1,7 +1,6 @@
 <?php
 namespace GeorgRinger\ToggleModules;
 
-
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 
@@ -28,7 +27,6 @@ class ModuleStatus
 
         return $response;
     }
-
 
     /**
      * Returns BackendUserAuthentication
