@@ -4,6 +4,7 @@ namespace GeorgRinger\ToggleModules\Backend\ToolbarItems;
 
 
 use TYPO3\CMS\Backend\Toolbar\ToolbarItemInterface;
+use TYPO3\CMS\Core\Authentication\BackendUserAuthentication;
 use TYPO3\CMS\Core\Page\PageRenderer;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Fluid\View\StandaloneView;
@@ -53,7 +54,7 @@ class ActionToolbarItem implements ToolbarItemInterface
      *
      * @return array
      */
-    public function getAdditionalAttributes()
+    public function getAdditionalAttributes(): array
     {
         return [];
     }
@@ -63,7 +64,7 @@ class ActionToolbarItem implements ToolbarItemInterface
      *
      * @return bool
      */
-    public function hasDropDown()
+    public function hasDropDown(): bool
     {
         return true;
     }
@@ -73,7 +74,7 @@ class ActionToolbarItem implements ToolbarItemInterface
      *
      * @return bool
      */
-    public function checkAccess()
+    public function checkAccess(): bool
     {
         return $this->getBackendUser()->isAdmin();
     }
@@ -83,7 +84,7 @@ class ActionToolbarItem implements ToolbarItemInterface
      *
      * @return int
      */
-    public function getIndex()
+    public function getIndex(): int
     {
         return 33;
     }
@@ -91,9 +92,9 @@ class ActionToolbarItem implements ToolbarItemInterface
     /**
      * Returns the current BE user.
      *
-     * @return \TYPO3\CMS\Core\Authentication\BackendUserAuthentication
+     * @return BackendUserAuthentication
      */
-    protected function getBackendUser()
+    protected function getBackendUser(): BackendUserAuthentication
     {
         return $GLOBALS['BE_USER'];
     }

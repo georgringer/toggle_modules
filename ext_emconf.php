@@ -1,15 +1,15 @@
 <?php
 
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'toggle modules',
+    'title' => 'Toggle administration modules in menu via toolbar',
     'description' => '+',
     'category' => 'be',
     'author' => 'Georg Ringer',
-    'state' => 'alpha',
-    'version' => '0.0.1',
+    'state' => 'beta',
+    'version' => '1.0.0',
     'constraints' => [
         'depends' => [
-            'typo3' => '7.6.0-8.6.99',
+            'typo3' => '9.0.0-9.9.99',
         ],
         'conflicts' => [],
         'suggests' => [],

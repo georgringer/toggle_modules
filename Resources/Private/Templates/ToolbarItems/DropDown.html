@@ -1,6 +1,6 @@
 <html xmlns:core="http://typo3.org/ns/TYPO3/CMS/Core/ViewHelpers" data-namespace-typo3-fluid="true">
 <h3 class="dropdown-headline">
-	<f:translate key="sys_action"/>
+	{f:translate(key:'header')}
 </h3>
 <hr>
 <div class="dropdown-table">
@@ -10,7 +10,7 @@
 				<input type="checkbox" id="installToolModules" checked="{states.installToolModules}"/>
 			</div>
 			<div class="dropdown-table-column dropdown-table-title">
-				Toggle new Install Tool modules
+				{f:translate(key:'item.installTool')}
 			</div>
 		</label>
 	</div>
