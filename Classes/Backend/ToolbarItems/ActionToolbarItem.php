@@ -2,7 +2,6 @@
 
 namespace GeorgRinger\ToggleModules\Backend\ToolbarItems;
 
-
 use TYPO3\CMS\Backend\Toolbar\ToolbarItemInterface;
 use TYPO3\CMS\Core\Authentication\BackendUserAuthentication;
 use TYPO3\CMS\Core\Page\PageRenderer;
@@ -46,7 +45,6 @@ class ActionToolbarItem implements ToolbarItemInterface
      */
     protected function setAvailableActions()
     {
-
     }
 
     /**
